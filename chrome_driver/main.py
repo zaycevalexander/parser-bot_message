@@ -73,10 +73,8 @@ def main():
                 'count': read_file()['count']
             }
             write_url(dict)
-
     except Exception as ex:
         print(ex)
-        pass
     finally:
         driver.close()
         driver.quit()
